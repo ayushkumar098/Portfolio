@@ -1,7 +1,7 @@
 .projectPage{
     height: 100vh;
     background-color: rgb(23, 24, 25);
-    color: white;
+    color: #F2F7FF;
     
     
     .project-container{
@@ -19,7 +19,7 @@
                     width: 25rem;
                     height: 30rem;
                     margin: 0 2rem;
-                    border: 2px solid gold;
+                    border: 2px solid #1C6DD0;
                     border-radius: 10px;
                     position: relative;
                     transition: transform 0.3s ease;
@@ -90,7 +90,7 @@
 
                         a {
                             padding: 0.3rem 1.5rem;
-                            border: 1px solid gold;
+                            border: 1px solid #1C6DD0;
                             border-radius: 4px;
                         }
                     }

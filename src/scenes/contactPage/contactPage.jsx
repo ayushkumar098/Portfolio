@@ -69,8 +69,13 @@ export const ContactPage = () => {
           <motion.div className="contact-container" variants={variants}>
             <div className="info">
               <motion.div className="box" variants={variants}>
-                <IconButton>
-                  <LocationOnOutlinedIcon />
+                <IconButton sx={{ backgroundColor: "#121212" }}>
+                  <LocationOnOutlinedIcon
+                    sx={{
+                      fontSize: 27,
+                      color: "#F2F7FF",
+                    }}
+                  />
                 </IconButton>
                 <div className="infoText">
                   <h2>Location:</h2>
@@ -78,8 +83,13 @@ export const ContactPage = () => {
                 </div>
               </motion.div>
               <motion.div className="box" variants={variants}>
-                <IconButton>
-                  <PhoneAndroidOutlinedIcon />
+                <IconButton sx={{ backgroundColor: "#121212" }}>
+                  <PhoneAndroidOutlinedIcon
+                    sx={{
+                      fontSize: 27,
+                      color: "#F2F7FF",
+                    }}
+                  />
                 </IconButton>{" "}
                 <div className="infoText">
                   <h2>Call:</h2>
@@ -87,9 +97,14 @@ export const ContactPage = () => {
                 </div>
               </motion.div>
               <motion.div className="box" variants={variants}>
-                <IconButton>
-                  <EmailOutlinedIcon />
-                </IconButton>{" "}
+                <IconButton sx={{ backgroundColor: "#121212" }}>
+                  <EmailOutlinedIcon
+                    sx={{
+                      fontSize: 27,
+                      color: "#F2F7FF",
+                    }}
+                  />
+                </IconButton>
                 <div className="infoText">
                   <h2>Email:</h2>
                   <p>kumarayush2418@gmail.com</p>
@@ -147,7 +162,7 @@ export const ContactPage = () => {
                   name="subject"
                 />
                 <textarea placeholder="Message" rows="6" name="message" />
-                <button>Submit</button>
+                <button>Send Message</button>
                 {error && "Error!"}
                 {success && "Success"}
               </div>
@@ -158,12 +173,26 @@ export const ContactPage = () => {
 
       <div className="footer">
         <div>
-          <IconButton>
-            <LinkedInIcon />
-          </IconButton>
-          <IconButton>
-            <GitHubIcon />
-          </IconButton>
+          <a href="https://www.linkedin.com/in/ayushkumar1201/" target="_blank">
+            <IconButton>
+              <LinkedInIcon
+                sx={{
+                  fontSize: 25,
+                  color: "#F2F7FF",
+                }}
+              />
+            </IconButton>
+          </a>
+          <a href="https://github.com/ayushkumar098" target="_blank">
+            <IconButton>
+              <GitHubIcon
+                sx={{
+                  fontSize: 25,
+                  color: "#F2F7FF",
+                }}
+              />
+            </IconButton>
+          </a>
         </div>
         <p>Created By Ayush Kumar</p>
       </div>

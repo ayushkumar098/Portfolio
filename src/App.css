@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  /* background-color: #0c0c1d; */
-  color: lightgray;
+  color: #f2f7ff;
+  font-family: "Montserrat";
 }
 
 a {

@@ -1,7 +1,7 @@
 .aboutPage {
     height: 100vh;
     background-color: rgb(12, 11, 13);
-    color: antiquewhite;
+    color: #F2F7FF;
 
     .aboutPage-container{
         margin-left: 12rem;
@@ -30,18 +30,20 @@
             }
             a{
                 font-size: 1.2rem;
-                margin-top: 1rem;
+                font-weight: 900;
+                margin-top: 2rem;
                 padding: .5rem 2rem;
-                border: 2px solid gold;
+                border: 2px solid #1C6DD0;
+                background-color: #1C6DD0;
                 border-radius: 5px;
                 width: fit-content;
                 text-decoration: none;
                 color: inherit;
             }
             a:hover{
-                border: 2px solid rgba(255, 255, 255, 0.533);
-                background-color: rgba(255, 255, 255, 0.522);
-                color: gold;
+                border: 3px solid rgba(255, 255, 255, 0.533);
+                background-color: #1C6DD0(255, 255, 255, 0.522);
+                color: #F2F7FF;
             }
         }
     }

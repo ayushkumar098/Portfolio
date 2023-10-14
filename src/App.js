@@ -27,10 +27,6 @@ function App() {
           <section>
             <ContactPage />
           </section>
-
-          <section>
-            <ProjectsPage />
-          </section>
         </main>
       </div>
     </>

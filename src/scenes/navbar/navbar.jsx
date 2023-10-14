@@ -52,9 +52,9 @@ export const Navbar = () => {
             <HomeOutlinedIcon
               sx={{
                 fontSize: 35,
-                color: "#fff",
+                color: "#F2F7FF",
                 ":hover": {
-                  color: "orange",
+                  color: "#1C6DD0",
                 },
               }}
             />
@@ -74,9 +74,9 @@ export const Navbar = () => {
             <PersonPinOutlinedIcon
               sx={{
                 fontSize: 30,
-                color: "#fff",
+                color: "#F2F7FF",
                 ":hover": {
-                  color: "orange",
+                  color: "#1C6DD0",
                 },
               }}
             />
@@ -96,9 +96,9 @@ export const Navbar = () => {
             <PhonelinkOutlinedIcon
               sx={{
                 fontSize: 30,
-                color: "#fff",
+                color: "#F2F7FF",
                 ":hover": {
-                  color: "orange",
+                  color: "#1C6DD0",
                 },
               }}
             />
@@ -118,9 +118,9 @@ export const Navbar = () => {
             <EmailOutlinedIcon
               sx={{
                 fontSize: 30,
-                color: "#fff",
+                color: "#F2F7FF",
                 ":hover": {
-                  color: "orange",
+                  color: "#1C6DD0",
                 },
               }}
             />
@@ -131,4 +131,3 @@ export const Navbar = () => {
     </div>
   );
 };
-

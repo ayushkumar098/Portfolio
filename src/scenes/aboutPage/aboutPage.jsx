@@ -43,14 +43,14 @@ export const AboutPage = () => {
             Full Stack Web Developer
           </motion.h2>
           <motion.p variants={textVariants}>
-            I have a B.Tech degree in Computer Science from SRMIST. I'm an
-            enthusiastic individual with strong communication skills and a quick
-            learner. During my academic journey, I developed a strong foundation
-            in core computer science subjects such as DSA, OOPS and SQL. I am
-            proficient with programming languages such as C, C++, JavaScript. I
-            have worked on personal projects such as CKD Pridiction where I was
-            able to hone my ML skills. Outside of work, I like chess and
-            football.
+            "I am a Computer Science graduate and aspiring web developer, I
+            am passionate about crafting meaningful online experiences. With
+            proficiency in both frontend and backend web technologies, I thrive
+            on turning creative concepts into functional, user-friendly
+            websites. My journey is defined by a commitment to continuous
+            learning and a dedication to delivering innovative solutions. Let's
+            connect and explore the endless possibilities of the digital world
+            together."
           </motion.p>
           <motion.a href={profilePhoto} download variants={textVariants}>
             Download CV

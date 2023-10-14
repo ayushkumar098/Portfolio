@@ -22,12 +22,11 @@ const textVariants = {
 };
 
 export const LandingPage = () => {
-  
   const typed = useRef(null);
   const el = useRef(null);
   useEffect(() => {
     const options = {
-      strings: ["Web Developer", "Learner", "Programer"],
+      strings: ["Web Developer", "Learner", "Programmer"],
       typeSpeed: 150,
       backSpeed: 80,
       loop: true,
@@ -49,35 +48,39 @@ export const LandingPage = () => {
       >
         <div className="intro">
           {/* <motion.p variants={textVariants}>Hi,</motion.p> */}
-          <motion.h1 variants={textVariants}>
-            Ayush Kumar
-          </motion.h1>
+          <motion.h1 variants={textVariants}>Ayush Kumar</motion.h1>
           <motion.p variants={textVariants}>
             I'm a <span className="typing" ref={el}></span>
           </motion.p>
         </div>
         <div className="icon-list">
-          <LinkedInIcon
-            sx={{
-              color: "white",
-              fontSize: "2rem",
-              ":hover": { color: "orange" },
-            }}
-          />
-          <GitHubIcon
-            sx={{
-              color: "white",
-              fontSize: "2rem",
-              ":hover": { color: "orange" },
-            }}
-          />
-          <InstagramIcon
-            sx={{
-              color: "white",
-              fontSize: "2rem",
-              ":hover": { color: "orange" },
-            }}
-          />
+          <a href="https://www.linkedin.com/in/ayushkumar1201/" target="_blank">
+            <LinkedInIcon
+              sx={{
+                color: "#F2F7FF",
+                fontSize: "2rem",
+                ":hover": { color: "#1C6DD0" },
+              }}
+            />
+          </a>
+          <a href="https://github.com/ayushkumar098" target="_blank">
+            <GitHubIcon
+              sx={{
+                color: "#F2F7FF",
+                fontSize: "2rem",
+                ":hover": { color: "#1C6DD0" },
+              }}
+            />
+          </a>
+          <a href="https://www.instagram.com/ayushkumar1201/" target="_blank">
+            <InstagramIcon
+              sx={{
+                color: "#F2F7FF",
+                fontSize: "2rem",
+                ":hover": { color: "#1C6DD0" },
+              }}
+            />
+          </a>
         </div>
       </motion.div>
     </div>

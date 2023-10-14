@@ -1,7 +1,7 @@
 .contactPage {
     height: 100vh;
-    background-color: rgb(65, 61, 61);
-    color: #ccc;
+    background-color: black;
+    color: #F2F7FF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,7 +44,7 @@
             position: relative;
 
             .phoneSvg{
-                stroke: orange;
+                stroke: #1C6DD0;
                 position: absolute;
                 margin-left: 100px;
                 pointer-events: none;
@@ -61,36 +61,44 @@
                     input{
                         width: 21rem;
                         padding: 15px;
-                        border: 1px solid #ccc;
+                        border: 1px solid #F2F7FF;
                         border-radius: 4px;
                     }
                 }
                 input {
                     width: 44rem;
                     padding: 15px;
-                    border: 1px solid #ccc;
+                    border: 1px solid #F2F7FF;
                     border-radius: 4px;
                 }
                 textarea{
                     width: 44rem;
                     padding: 15px;
-                    border: 1px solid #ccc;
+                    border: 1px solid #F2F7FF;
                     border-radius: 4px;
                 }
                 button{
-                    width: 15rem;
+                    font-size: 1.2rem;
+                    width: 13rem;
                     padding:.7rem 2rem ;
-                    border: 1px solid gold;
-                    
+                    color: #F2F7FF;
+                    border: 1px solid #1C6DD0;
+                    background-color: #1C6DD0;
+                    border-radius: 5px;
                     font-size: 1rem;
+                }
+                button:hover{
+                    border: 3px solid rgba(255, 255, 255, 0.533);
+                    background-color: #1C6DD0(255, 255, 255, 0.522);
+                    color: #F2F7FF;
                 }
             }
         }
     }
 
     .footer{
-        background-color: #333;
-        color: #fff;
+        background-color: #323643;
+        color: #F2F7FF;
         text-align: center;
         padding: 20px;
         

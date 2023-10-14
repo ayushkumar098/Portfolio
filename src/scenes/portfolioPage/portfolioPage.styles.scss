@@ -1,6 +1,10 @@
 .portfolio {
     position: relative;
     background-color: rgb(23, 23, 24);
+    background-image: url(../../assets/images/verticalmountain3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .progress {
         position: sticky;
@@ -8,8 +12,8 @@
         left: 0;
         padding-top: 50px;
         text-align: center;
-        color: orange;
-        font-size: 36px;
+        color: #1C6DD0;
+        font-size: 2rem;
 
         // @include mobile {
         //     padding-top: calc(100vh - 100px);
@@ -18,7 +22,7 @@
 
         .progressBar {
             height: 10px;
-            background-color: white;
+            background-color: #F2F7FF;
         }
     }
 
@@ -77,15 +81,15 @@
                 // }
 
                 h2 {
-                    font-size: 4rem;
-
+                    font-size: 3rem;
+                    color: #F2F7FF;
                     // @include mobile {
                     //     font-size: 36px;
                     // }
                 }
 
                 p {
-                    color: gray;
+                    color: #F2F7FF;
                     font-size: 20px;
 
                     // @include mobile {
@@ -106,7 +110,9 @@
 
                 button {
                     font-size: 1rem;
-                    background-color: orange;
+                    font-weight: 600;
+                    background-color: #1C6DD0;
+                    color: #F2F7FF;
                     border: none;
                     border-radius: 5px;
                     padding: 10px;
@@ -114,8 +120,8 @@
                     cursor: pointer;
                 }
                 button:hover{
-                    background-color: white;
-                    color: orange;
+                    background-color: #F2F7FF;
+                    color: #1C6DD0;
                 }
             }
         }
