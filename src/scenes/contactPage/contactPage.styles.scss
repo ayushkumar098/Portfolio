@@ -1,0 +1,109 @@
+.contactPage {
+    height: 100vh;
+    background-color: rgb(65, 61, 61);
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        flex: 1;
+        padding-bottom: 50px;
+
+        .contact-container{
+            margin-left: 10rem ;
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+                .box{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+
+                    .infoText{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        h2{
+                            margin: 0;
+                        }
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .messgage-container{
+            position: relative;
+
+            .phoneSvg{
+                stroke: orange;
+                position: absolute;
+                margin-left: 100px;
+                pointer-events: none;
+                // z-index: -5;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2rem;
+                    input{
+                        width: 21rem;
+                        padding: 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                    }
+                }
+                input {
+                    width: 44rem;
+                    padding: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                textarea{
+                    width: 44rem;
+                    padding: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                button{
+                    width: 15rem;
+                    padding:.7rem 2rem ;
+                    border: 1px solid gold;
+                    
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        
+        .footer div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+        .footer p {
+            margin: 0;
+        }
+    }
+}
+

@@ -1,0 +1,114 @@
+.projectPage{
+    height: 100vh;
+    background-color: rgb(23, 24, 25);
+    color: white;
+    
+    
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .projects {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+
+                .project {
+                    width: 25rem;
+                    height: 30rem;
+                    margin: 0 2rem;
+                    border: 2px solid gold;
+                    border-radius: 10px;
+                    position: relative;
+                    transition: transform 0.3s ease;
+
+                    .image-wrapper{
+                        display: flex;
+                        justify-content: center;
+
+                        position: relative;
+
+                        img {
+                            height: 17rem;
+                            width: 25rem;
+                        }
+
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.7);
+                            opacity: 0;
+                            transition: opacity 0.3s ease;
+                            pointer-events: none;
+                            /* Allows mouse events to pass through the overlay */
+                            display: flex;
+                            justify-content: space-around;
+
+                            .column {
+                                flex: 1;
+                                padding: 10px;
+                                margin-top: 2rem;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                color: #fff;
+
+                                .box {
+                                    width: 9rem;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    padding: .5rem 1rem;
+                                    margin: 1rem 0;
+                                    text-align: center;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .text-div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        h3 {
+                            font-size: 2rem;
+                            margin: 0;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                            padding: 0 1rem 1rem 1rem;
+                            margin: 0;
+                            text-align: center;
+                        }
+
+                        a {
+                            padding: 0.3rem 1.5rem;
+                            border: 1px solid gold;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+
+                .project:hover {
+                    transform: translateY(-20px);
+                    /* Move the project up slightly on hover */
+                }
+
+                .project:hover .overlay {
+                    opacity: 1;
+                    /* Make the overlay visible on hover */
+                }
+            }
+    }
+    
+}
+
+
+

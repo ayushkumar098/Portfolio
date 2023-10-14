@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: none;
+    color: #fff;
+    overflow-y: auto;/* Add scroll when content exceeds navbar height */
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    z-index: 10;
+
+        .navbar-item a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            border-radius: 50px;
+            background-color: rgb(18, 15, 18);
+            margin: 7px;
+            
+            p{
+                margin: 0;
+            }
+        }
+    
+        .navbar-item a:hover {
+            background-color: #000;
+            color: orange;
+        }
+    
+        .navbar-item a p {
+            display: none;
+            margin-left: 10px;
+        }
+    
+        .navbar-item a:hover p {
+            display: block;
+            color: orange;
+        }
+}
+
+
