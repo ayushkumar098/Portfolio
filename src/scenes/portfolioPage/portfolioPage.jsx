@@ -107,7 +107,7 @@ const Single = ({ item }) => {
             {item.link && (
               <button>
                 <a href={item.link} target="_blank">
-                  See Demo
+                  View Live
                 </a>
               </button>
             )}

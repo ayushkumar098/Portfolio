@@ -43,14 +43,14 @@ export const AboutPage = () => {
             Full Stack Web Developer
           </motion.h2>
           <motion.p variants={textVariants}>
-            "I am a Computer Science graduate and aspiring web developer, I
+            I am a Computer Science graduate and aspiring web developer, I
             am passionate about crafting meaningful online experiences. With
             proficiency in both frontend and backend web technologies, I thrive
             on turning creative concepts into functional, user-friendly
             websites. My journey is defined by a commitment to continuous
             learning and a dedication to delivering innovative solutions. Let's
             connect and explore the endless possibilities of the digital world
-            together."
+            together.
           </motion.p>
           <motion.a href={profilePhoto} download variants={textVariants}>
             Download CV
