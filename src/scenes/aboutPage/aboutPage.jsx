@@ -1,6 +1,7 @@
 import { Title } from "../../components/title/title";
 import "./aboutPage.styles.scss";
 import profilePhoto from "../../assets/images/ProfilePicture.jpeg";
+import resume from "../../assets/files/resume.pdf";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -43,8 +44,8 @@ export const AboutPage = () => {
             Full Stack Web Developer
           </motion.h2>
           <motion.p variants={textVariants}>
-            I am a Computer Science graduate and aspiring web developer, I
-            am passionate about crafting meaningful online experiences. With
+            I am a Computer Science graduate and aspiring web developer, I am
+            passionate about crafting meaningful online experiences. With
             proficiency in both frontend and backend web technologies, I thrive
             on turning creative concepts into functional, user-friendly
             websites. My journey is defined by a commitment to continuous
@@ -52,7 +53,7 @@ export const AboutPage = () => {
             connect and explore the endless possibilities of the digital world
             together.
           </motion.p>
-          <motion.a href={profilePhoto} download variants={textVariants}>
+          <motion.a href={resume} download variants={textVariants}>
             Download CV
           </motion.a>
         </div>
