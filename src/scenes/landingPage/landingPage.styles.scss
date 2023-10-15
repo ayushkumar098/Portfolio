@@ -1,3 +1,9 @@
+@mixin mobile {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+
 .for-background{
     background-image: url(../../assets/images/bg1.jpg);
     background-position: center;
@@ -6,16 +12,30 @@
     height: 100vh;
     margin: 0;
     background-color: black;
+    @include mobile {
+    background-image: url(../../assets/images/mobile-bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    }
 
     .home{
         padding-left: 12rem;
+        @include mobile{
+            padding-left: 1rem;
+        }
         .intro{
-            padding-top: 13rem;
+            padding-top: 35vh;
             h1{
                 color: #fff;
                 font-size: 5rem;
                 font-weight: 700;
                 margin: 0;
+                @include mobile {
+                    font-size: 2rem;
+                    text-align: center;
+                }
             }
 
             p {
@@ -26,12 +46,20 @@
                 span{
                     color: #1C6DD0;
                 }
+                @include mobile {
+                    font-size: 1rem;
+                    text-align: center;
+                }
             }
         }
         .icon-list{
             display: flex;
             gap: 1rem;
             margin: 1rem 0;
+            @include mobile {
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }

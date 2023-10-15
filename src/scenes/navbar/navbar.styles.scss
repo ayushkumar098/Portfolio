@@ -1,3 +1,9 @@
+@mixin mobile {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+
 .navbar {
     position: fixed;
     left: 0;
@@ -11,8 +17,34 @@
     align-items:start;
     justify-content: center;
     z-index: 10;
+    @include mobile {
+        left: -350px;
+        height: 100vh;
+        width: 75vw;
+        background-color: #181823;
+        transition: left 0.3s;
+        z-index: 100;
+        align-items: center;
+    }
 
-        .navbar-item a {
+    button{
+        top: 0;
+    }
+
+    .close-button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .navbar-item{
+        @include mobile {
+            width: 90%;
+        }
+        a{
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -20,26 +52,46 @@
             border-radius: 50px;
             background-color: rgb(18, 15, 18);
             margin: 7px;
-            
-            p{
+            @include mobile(){
+                color: #000;
+                background-color: #E5E0FF;
+            }
+
+            p {
+                display: none;
+                margin-left: 10px;
                 margin: 0;
+        
+                @include mobile {
+                    display: block;
+                    font-size: 1.1rem;
+                    color: #000;
+                    padding-left: .5rem;
+                }
             }
         }
-    
-        .navbar-item a:hover {
+
+        a:hover {
             background-color: #000;
             color: #1C6DD0;
+            @include mobile(){
+                color: black;
+                background-color: #F7F7F7;
+            }
         }
-    
-        .navbar-item a p {
-            display: none;
-            margin-left: 10px;
-        }
-    
-        .navbar-item a:hover p {
+
+        a:hover p {
             display: block;
             color: #1C6DD0;
+            @include mobile() {
+                color: black;
+                background-color: #F7F7F7;
+            }
         }
-}
+    }
 
+}
+.open {
+    left: 0;
+}
 

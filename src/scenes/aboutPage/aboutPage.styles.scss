@@ -1,7 +1,16 @@
+@mixin mobile {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+
 .aboutPage {
     height: 100vh;
     background-color: rgb(12, 11, 13);
     color: #F2F7FF;
+    @include mobile(){
+
+    }
 
     .aboutPage-container{
         margin-left: 12rem;
@@ -9,23 +18,43 @@
         display: flex;
         flex-direction: row;
         gap: 9rem;
+        @include mobile {
+            margin-left: 1rem;
+            margin-top: 1rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
         .profilePhoto-container img{
             width: 20rem;
             height: 22.5rem;
             border-radius: 3px;
+            @include mobile {
+                width: 10rem;
+                    height: 12rem;
+            }
         }
         .description-container{
             display: flex;
             flex-direction: column;
-
+            @include mobile {
+                text-align: center;
+            padding-top: 1rem;
+            }
             h2{
                 font-size: 2rem;
                 padding-bottom: 10px;
+                @include mobile {
+                        font-size: 1.5rem;
+                    }
             }
             p{
                 padding-right: 15rem;
                 font-size: 1.2rem;
-                
+                @include mobile {
+                    font-size: 1rem;
+                    padding-right: 1rem;
+                }
             }
             a{
                 font-size: 1.2rem;
@@ -38,6 +67,13 @@
                 width: fit-content;
                 text-decoration: none;
                 color: inherit;
+                @include mobile {
+                    margin: auto;
+                    margin-top: 2rem;
+                    border-radius: 50px;
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
             }
             a:hover{
                 border: 3px solid rgba(255, 255, 255, 0.533);

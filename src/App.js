@@ -1,21 +1,31 @@
-import { useRef } from "react";
-import "./App.css";
+import { useState } from "react";
+import "./App.scss";
+import { useMediaQuery } from "@mui/material";
 import Cursor from "./components/cursor/cursor";
 import { AboutPage } from "./scenes/aboutPage/aboutPage";
 import { ContactPage } from "./scenes/contactPage/contactPage";
 import { LandingPage } from "./scenes/landingPage/landingPage";
 import { Navbar } from "./scenes/navbar/navbar";
 import { PortfolioPage } from "./scenes/portfolioPage/portfolioPage";
-import { ProjectsPage } from "./scenes/projectsPage/projectsPage";
+import Hamburger from "./components/hamburger/hamburger";
 
 function App() {
-  const ref = useRef()
+  const isNonMobileScreen = useMediaQuery("(min-width:450px)");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+    console.log(sidebarOpen)
+  };
+
   return (
     <>
       <Cursor />
       <div className="App">
-        <Navbar />
-
+        {!isNonMobileScreen && (
+          <Hamburger onToggle={toggleSidebar} isOpen={sidebarOpen} />
+        )}
+        <Navbar isOpen={sidebarOpen} onClose={toggleSidebar} />
         <main className="content">
           <section>
             <LandingPage />
